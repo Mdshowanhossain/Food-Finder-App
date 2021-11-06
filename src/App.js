@@ -6,8 +6,8 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 
-const APP_ID = "a52b4d43";
-const APP_KEY = "e0e5c667605f5e91d8275c973531b80a";
+const APP_ID = "cf2e4cad";
+const APP_KEY = "653794ea094f5e93afb5fa3cedb760b3";
 
 const RecipeContainer = styled.div`
   display: flex;
@@ -30,17 +30,17 @@ const RecipeName = styled.span`
   text-overflow: ellipsis;
 `;
 const SeeMoreText = styled.span`
-  color: #eb3300;
+  color: #fe9738;
   font-size: 18px;
   text-align: center;
-  border: solid 1px #eb3300;
+  border: solid 1px #fe9738;
   border-radius: 3px;
   padding: 10px 15px;
   cursor: pointer;
 `;
 const IngredientsText = styled(SeeMoreText)`
-  color: green;
-  border: solid 1px green;
+  color: #9e5528;
+  border: solid 1px #9e5528;
   margin-bottom: 12px;
 `;
 const SeeNewTab = styled(SeeMoreText)`
@@ -127,9 +127,9 @@ const SearchIcon = styled.img`
   height: 32px;
 `;
 const RecipeImage = styled.img`
-  width: 36px;
-  height: 36px;
-  margin: 15px;
+  width: 76px;
+  height: 76px;
+  margin: 5px;
 `;
 const Placeholder = styled.img`
   width: 120px;
@@ -175,8 +175,8 @@ const AppComponent = () => {
     <Container>
       <Header>
         <AppName>
-          <RecipeImage src="/react-recipe-finder/hamburger.svg" />
-          Recipe Finder
+          <RecipeImage src="/react-recipe-finder/a.jpg" />
+          Food Finder
         </AppName>
         <SearchBox>
           <SearchIcon src="/react-recipe-finder/search-icon.svg" />
@@ -193,7 +193,7 @@ const AppComponent = () => {
             <RecipeComponent key={index} recipe={recipe.recipe} />
           ))
         ) : (
-          <Placeholder src="/react-recipe-finder/hamburger.svg" />
+          <Placeholder src="/react-recipe-finder/b.jpg" />
         )}
       </RecipeListContainer>
     </Container>
